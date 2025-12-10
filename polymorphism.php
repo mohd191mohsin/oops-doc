@@ -19,8 +19,13 @@ function print_animal_sound(Animal $animal){
     echo $animal->sound();
 }
 
-print_animal_sound(new Cat());
-print_animal_sound(new Dog());
+$arr = [new Cat(), new Dog()];
+foreach($arr as $animal){
+    echo $animal->sound();
+}
+
+// print_animal_sound(new Cat());
+// print_animal_sound(new Dog());
 
 
 

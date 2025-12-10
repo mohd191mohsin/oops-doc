@@ -1,28 +1,18 @@
-<?php
-// Online PHP compiler to run PHP program online
-// Print "Try programiz.pro" message
-// inheritnce
-class Animal{
-    public function sound(){
-        return "Some Animal Sounds";
+<?php 
+class User{
+    public function login(){
+        return "User logged in";
     }
 }
 
-class Cat extends Animal{
-    public function sound(){
-        return "MEOW!";
-    } 
+class Admin extends User{
+    public function AccessDashboard(){
+        return "Admin Dashboard Accessed";
+    }
 }
-class Dog extends Animal{
-    public function sound(){
-        return "WOOF!";
-    } 
-}
-$cat = new Cat();
-echo $cat->sound();  //MEOW!
-
-$dog = new Dog();
-echo $dog->sound(); //WOOF!
 
 
+$admin = new Admin();
+echo $admin->login();
+echo $admin->AccessDashboard();
 ?>
